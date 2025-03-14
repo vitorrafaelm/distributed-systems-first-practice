@@ -79,6 +79,7 @@ public class ProxyThread implements Runnable {
                 response = processarRequisicao(request);
             }
 
+            printCacheStatus();
             this.clientOutput.println(response);
 
             clientOutput.close();
