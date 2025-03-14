@@ -1,0 +1,124 @@
+Mar 13, 2025 11:13:28 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 13, 2025 11:24:04 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:24:04 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:24:04 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:33:58 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 13, 2025 11:34:03 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:34:03 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:34:03 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:42:20 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:42:20 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:42:20 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:42:45 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:42:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:42:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:43:00 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:43:00 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:43:00 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:44:42 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:44:42 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:44:42 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 13, 2025 11:45:15 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 13, 2025 11:45:15 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 13, 2025 11:45:15 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 12:02:51 AM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 12:02:51 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 12:02:51 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 12:03:16 AM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 12:03:16 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 12:03:16 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 12:03:48 AM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 12:03:48 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 12:03:48 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 12:04:54 AM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 12:04:54 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 12:04:54 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 12:06:08 AM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 12:06:08 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 12:06:08 AM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:49:35 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:49:35 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:49:35 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:49:51 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:49:51 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:49:51 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:50:55 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:50:55 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:50:55 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:53:19 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:53:19 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:53:19 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:54:46 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:54:46 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:54:46 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:55:10 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:55:10 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:55:10 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 4:55:21 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 4:55:21 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 4:55:21 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+Mar 14, 2025 5:36:29 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 127.0.0.1
+Mar 14, 2025 5:36:29 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 14, 2025 5:36:29 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
