@@ -1,8 +1,4 @@
-package org.proxy.server;
-
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import org.example.service_order_proxy.threads.ProxyThread;
+package org.example.service_order_proxy.server;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,6 +7,11 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import org.example.service_order_proxy.threads.ProxyThread;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 public class Server {
     private int proxyPort;    // Socket para receber conexões dos clientes

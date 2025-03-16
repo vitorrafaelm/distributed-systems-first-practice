@@ -1,6 +1,5 @@
-package org.proxy;
-
-import org.proxy.server.Server;
+package org.example.service_order_proxy;
+import org.example.service_order_proxy.server.Server;
 
 public class Main {
     public static void main(String[] args) {

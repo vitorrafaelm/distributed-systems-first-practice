@@ -1,193 +1,92 @@
 package org.example.service_order_proxy.threads;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.Date;
-import java.util.LinkedHashMap;
+import java.rmi.RemoteException;
 import java.util.Map;
 
+import org.example.service_order_proxy.RMI.RMIService;
+
 public class ProxyThread implements Runnable {
-    private BufferedReader clientInput;
-    private PrintWriter clientOutput;
-    private String line;
-    Socket clientSocket;
-
-    private String appServerIp;           // IP do servidor de aplicação
-    private int appServerPort;            // Porta do servidor de aplicação
     private File logFile;
+    private String appServerIp;
+    private int appServerPort;
+    private String request;
+    private PrintWriter clientOutput;
+    private BufferedReader clientInput;
+    private Socket clientSocket;
+    private Map<String, String> cache;
+    private RMIService[] otherProxies;
 
-    // Cache FIFO
-    private static final int CACHE_SIZE = 30;
-    private static final Map<String, String> cache = new LinkedHashMap<String, String>(CACHE_SIZE + 1, 0.75f, false) {
-        @Override
-        protected boolean removeEldestEntry(Map.Entry eldest) {
-            return size() > CACHE_SIZE;
-        }
-    };
-
-    public ProxyThread(File file, String appServerIp, int appServerPort, String readLine, PrintWriter clientOutput, BufferedReader clientInput, Socket clientSocket) {
-        this.logFile = file;
+    public ProxyThread(File logFile, String appServerIp, int appServerPort, String request, PrintWriter clientOutput, BufferedReader clientInput, Socket clientSocket) {
+        this.logFile = logFile;
         this.appServerIp = appServerIp;
         this.appServerPort = appServerPort;
-        
-        this.clientInput = clientInput;
+        this.request = request;
         this.clientOutput = clientOutput;
-        this.line = readLine;
+        this.clientInput = clientInput;
         this.clientSocket = clientSocket;
-
+        this.cache = cache;
+        this.otherProxies = otherProxies;
     }
 
     @Override
     public void run() {
         try {
-            String request = this.line;
-            String response;
+            // Verifica o cache local primeiro
+            String cachedValue = cache.get(request);
+            if (cachedValue != null) {
+                clientOutput.println(cachedValue);
+                return;
+            }
 
-            JsonObject requestJson = JsonParser.parseString(request).getAsJsonObject();
-            String operation = requestJson.get("operation").getAsString();
+            // Se não encontrado no cache local, consulta os outros proxys
+            for (RMIService proxy : otherProxies) {
+                try {
+                    cachedValue = proxy.getCacheItem(request);
+                    if (cachedValue != null) {
+                        // Atualiza o cache local
+                        cache.put(request, cachedValue);
+                        clientOutput.println(cachedValue);
+                        return;
+                    }
+                } catch (RemoteException e) {
+                    System.err.println("Erro ao consultar proxy: " + e.getMessage());
+                }
+            }
 
-            boolean isReadOperation = "search".equals(operation);
+            // Se não encontrado em nenhum proxy, busca no servidor de aplicação
+            try (Socket appServerSocket = new Socket(appServerIp, appServerPort);
+                 PrintWriter appServerOutput = new PrintWriter(appServerSocket.getOutputStream(), true);
+                 BufferedReader appServerInput = new BufferedReader(new InputStreamReader(appServerSocket.getInputStream()))) {
 
-            if (isReadOperation) {
-                String id_item = requestJson.get("id").getAsString();
-                synchronized (cache) {
-                    if (cache.containsKey(id_item)) {
-                        registrarLog("CACHE HIT para operação: " + operation + " [Chave: " + id_item + "]");
-                        response = cache.get(id_item);
-                    } else {
-                        registrarLog("CACHE MISS para operação: " + operation + " [Chave: " + id_item + "]");
-                        response = processarRequisicao(request);
+                appServerOutput.println(request);
+                String response = appServerInput.readLine();
 
-                        cache.put(id_item, response);
+                // Atualiza o cache local e nos outros proxys
+                cache.put(request, response);
+                for (RMIService proxy : otherProxies) {
+                    try {
+                        proxy.updateCacheItem(request, response);
+                    } catch (RemoteException e) {
+                        System.err.println("Erro ao atualizar cache no proxy: " + e.getMessage());
                     }
                 }
-            } else {
-                if ("add".equals(operation) || "update".equals(operation) || "delete".equals(operation)) {
-                    invalidateCache();
-                    registrarLog("Cache invalidada após operação de escrita: " + operation);
-                }
 
-                response = processarRequisicao(request);
+                clientOutput.println(response);
             }
-
-            printCacheStatus();
-            this.clientOutput.println(response);
-
-            clientOutput.close();
-            clientInput.close();
-            clientSocket.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
-    private String generateCacheKey(JsonObject requestJson) {
-        String operation = requestJson.get("operation").getAsString();
-        StringBuilder key = new StringBuilder(operation);
-
-        // Adicionar parâmetros específicos na chave dependendo da operação
-        if (requestJson.has("id")) {
-            key.append("_id_").append(requestJson.get("id").getAsString());
-        }
-        if (requestJson.has("code") && ("list".equals(operation) || "list_quantity".equals(operation))) {
-            key.append("_code_").append(requestJson.get("code").getAsString());
-        }
-
-        return key.toString();
-    }
-
-    // Invalida entradas da cache relacionadas a operações de listagem
-    private synchronized void invalidateCache() {
-        synchronized (cache) {
-            // Remover todas as entradas que começam com "list" ou "list_quantity"
-            cache.entrySet().removeIf(entry ->
-                    entry.getKey().startsWith("list") || entry.getKey().startsWith("list_quantity"));
-        }
-    }
-
-    private void printCacheStatus() {
-        StringBuilder sb = new StringBuilder("Estado atual da cache:\n");
-
-        synchronized (cache) {
-            sb.append("Tamanho: ").append(cache.size()).append("/").append(CACHE_SIZE).append("\n");
-            int count = 0;
-            for (Map.Entry<String, String> entry : cache.entrySet()) {
-                sb.append(count++).append(": ").append(entry.getKey()).append("\n");
-            }
-        }
-
-        registrarLog(sb.toString());
-    }
-
-    private String processarRequisicao(String requisicao) {
-        registrarLog("Requisição: " + requisicao + " - " + new Date());
-        return comunicarComServidor(requisicao);
-    }
-
-    // Método para comunicar com o servidor de aplicação
-    private String comunicarComServidor(String requisicao) {
-        Socket serverSocket = null;
-        PrintWriter serverOutput = null;
-        BufferedReader serverInput = null;
-        String resposta = "";
-
-        try {
-            // Conexão com o servidor de aplicação
-            serverSocket = new Socket(appServerIp, appServerPort);
-
-            /*
-            * Troquei clientSocket por serverSocket
-            * O clientSocket é a conexão com o cliente, e o serverSocket é a conexão com o servidor de aplicação.
-            * A comunicação com o servidor de aplicação é feita através do serverSocket, que é a conexão estabelecida com o servidor de aplicação. */
-            serverOutput = new PrintWriter(serverSocket.getOutputStream(), true);
-            serverInput = new BufferedReader(new InputStreamReader(serverSocket.getInputStream()));
-
-            // Envia requisição para o servidor de aplicação
-            serverOutput.println(requisicao);
-            serverOutput.flush();
-
-            // Recebe resposta do servidor de aplicação
-            resposta = serverInput.readLine();
-
-            // Log da operação
-            registrarLog("Servidor de aplicação: " + requisicao + " - Response: " + resposta);
-
-        } catch (IOException e) {
-            registrarLog("ERRO: " + e.getMessage());
-            resposta = "ERRO: " + e.getMessage(); // Retorna erro para o cliente
+            System.err.println("Erro ao processar requisição: " + e.getMessage());
         } finally {
-            // Fechar conexão
             try {
-                if (serverInput != null) serverInput.close();
-                if (serverOutput != null) serverOutput.close();
-                if (serverSocket != null) serverSocket.close();
+                clientSocket.close();
             } catch (IOException e) {
-                System.out.println("Erro ao fechar conexão com servidor: " + e.getMessage());
+                System.err.println("Erro ao fechar socket: " + e.getMessage());
             }
-        }
-
-        return resposta;
-    }
-
-    private synchronized void registrarLog(String mensagem) {
-        try (FileWriter fw = new FileWriter(logFile, true);
-             BufferedWriter bw = new BufferedWriter(fw);
-             PrintWriter pw = new PrintWriter(bw)) {
-
-            pw.println(new Date() + " - " + mensagem);
-
-        } catch (IOException e) {
-            System.out.println("Erro ao escrever no log: " + e.getMessage());
         }
     }
 }

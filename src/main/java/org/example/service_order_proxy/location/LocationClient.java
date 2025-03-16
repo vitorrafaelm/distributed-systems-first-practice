@@ -1,4 +1,4 @@
-package org.proxy.location;
+package org.example.service_order_proxy.location;
 
 import java.io.BufferedReader;
 import java.io.IOException;
