@@ -8,6 +8,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -17,10 +20,13 @@ public class LocationServer {
     private static final String APP_SERVER_ADDRESS = "localhost";
     private static final int APP_SERVER_PORT = 54321;
 
+    private static final Map<String, String> proxyAddresses = new HashMap<>();
+
     private static final Logger logger = Logger.getLogger("LocationServerLog");
 
     public static void main(String[] args) {
         setupLogger();
+        setupProxyAddresses();
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Servidor de Localização iniciado na porta " + PORT);
@@ -57,6 +63,12 @@ public class LocationServer {
         } catch (IOException e) {
             System.err.println("Erro ao configurar logger: " + e.getMessage());
         }
+    }
+
+    private static void setupProxyAddresses() {
+        proxyAddresses.put("localhost1", "localhost:54321");
+        proxyAddresses.put("localhost2", "localhost:54321");
+        proxyAddresses.put("localhost3", "localhost:54321");
     }
 
     static class ClientHandler implements Runnable {

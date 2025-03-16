@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60bc1f2c-4b9d-4b7e-bf25-b0d6a1d09c83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location_server_log.txt.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feat/practice-continuation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741916908389</updated>
       <workItem from="1741916909376" duration="194000" />
-      <workItem from="1741917262390" duration="12921000" />
+      <workItem from="1741917262390" duration="16256000" />
     </task>
     <servers />
   </component>
