@@ -122,3 +122,29 @@ Mar 14, 2025 5:36:29 PM org.example.service_order_location_server.LocationServer
 INFO: Requisição recebida: GET_APPLICATION_SERVER
 Mar 14, 2025 5:36:29 PM org.example.service_order_location_server.LocationServer$ClientHandler run
 INFO: Endereço do servidor de aplicação enviado para: 127.0.0.1
+mar. 17, 2025 5:13:03 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 17, 2025 5:13:03 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxies registrados: [localhost:54321, localhost:54331, localhost:54341]
+mar. 17, 2025 5:20:05 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 17, 2025 5:20:05 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxys registrados: [localhost:54321, localhost:54331, localhost:54341]
+mar. 17, 2025 6:45:30 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 17, 2025 6:45:30 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxys registrados: [localhost:54321, localhost:54331, localhost:54341]
+mar. 17, 2025 6:48:16 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 17, 2025 6:48:16 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxys registrados: [localhost:54321, localhost:54331, localhost:54341]
+mar. 17, 2025 9:13:25 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 17, 2025 9:13:25 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxys registrados: [12.0.0.1:54321, 12.0.0.1:54331, 12.0.0.1:54341]
+mar. 17, 2025 9:15:22 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Nova conexão de cliente: 127.0.0.1
+mar. 17, 2025 9:15:22 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFORMAÇÕES: Requisição recebida: GET_APPLICATION_SERVER
+mar. 17, 2025 9:15:22 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFORMAÇÕES: Cliente direcionado para o proxy: 12.0.0.1:54321

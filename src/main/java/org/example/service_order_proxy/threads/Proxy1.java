@@ -9,7 +9,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,12 +16,13 @@ import org.example.service_order_proxy.RMI.InterfaceImpl;
 import org.example.service_order_proxy.RMI.RMIService;
 
 public class Proxy1 {
+
     private int port = 54321;
     private String appServerIp = "localhost";
-    private int appServerPort = 5322;
+    private int appServerPort = 54322;
     private File logFile;
     private Map<String, String> cache = new HashMap<>();
-    private RMIService[] otherProxies = new RMIService[2];
+    private Map<String, String> proxies = new HashMap<>();
 
     public Proxy1() {
         this.logFile = new File("proxy1.log");
@@ -34,14 +34,14 @@ public class Proxy1 {
                 logFile.createNewFile();
             }
 
-            // Iniciar o servidor RMI
-            Registry registry = LocateRegistry.createRegistry(1300); // Porta RMI do Proxy1
-            RMIService rmiService = new InterfaceImpl(cache);
-            Naming.rebind("//localhost/Proxy1", rmiService); // Nome do serviço RMI para o Proxy2
+            proxies.put("1200", "CacheUpdateProxy1");
+            proxies.put("1201", "CacheUpdateProxy3");
 
-            // Obter referências para os outros proxys
-            otherProxies[0] = (RMIService) Naming.lookup("//localhost/Proxy2");
-            otherProxies[1] = (RMIService) Naming.lookup("//localhost/Proxy3");
+            LocateRegistry.createRegistry(1199);
+            RMIService rmiService = new InterfaceImpl(cache);
+            Naming.rebind("rmi://localhost:1199/CacheUpdateProxy1", rmiService);
+
+            System.out.println("Servidor RMI inciado no Proxy 1");
 
             ServerSocket serverSocket = new ServerSocket(port);
             System.out.println("Proxy 1 iniciado na porta " + port);
@@ -54,13 +54,15 @@ public class Proxy1 {
                 String request = clientInput.readLine();
 
                 ProxyThread thread = new ProxyThread(
-                    logFile,
-                    appServerIp,
-                    appServerPort,
-                    request,
-                    clientOutput,
-                    clientInput,
-                    clientSocket);
+                        logFile,
+                        appServerIp,
+                        appServerPort,
+                        request,
+                        clientOutput,
+                        clientInput,
+                        clientSocket,
+                        proxies
+                );
 
                 new Thread(thread).start();
             }

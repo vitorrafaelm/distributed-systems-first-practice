@@ -14,9 +14,10 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class LocationServer {
+
     private static final int PORT = 8000;
     private static final Logger logger = Logger.getLogger("LocationServerLog");
-    
+
     // Lista de proxies disponíveis
     private static final List<String> proxyServers = new ArrayList<>();
     private static int currentProxyIndex = 0;
@@ -25,17 +26,17 @@ public class LocationServer {
 
     public static void main(String[] args) {
         setupLogger();
-        
+
         // Inicia os proxies
-        proxyServers.add("localhost:54321"); // Proxy 1
-        proxyServers.add("localhost:54331"); // Proxy 2
-        proxyServers.add("localhost:54341"); // Proxy 3
+        proxyServers.add("12.0.0.1:54321"); // Proxy 1
+        proxyServers.add("12.0.0.1:54331"); // Proxy 2
+        proxyServers.add("12.0.0.1:54341"); // Proxy 3
 
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Servidor de Localização iniciado na porta " + PORT);
             logger.info("Servidor de Localização iniciado na porta " + PORT);
             System.out.println("Proxies registrados: " + proxyServers);
-            logger.info("Proxies registrados: " + proxyServers);
+            logger.info("Proxys registrados: " + proxyServers);
 
             // Loop para aceitar conexões
             while (true) {
@@ -69,7 +70,7 @@ public class LocationServer {
             System.err.println("Erro ao configurar logger: " + e.getMessage());
         }
     }
-    
+
     // Método para selecionar o próximo proxy usando balanceamento de carga
     private static synchronized String getNextProxyAddress() {
         if (useRandomBalancing) {
@@ -84,6 +85,7 @@ public class LocationServer {
     }
 
     static class ClientHandler implements Runnable {
+
         private final Socket clientSocket;
 
         public ClientHandler(Socket clientSocket) {
@@ -93,15 +95,13 @@ public class LocationServer {
         @Override
         public void run() {
             try (
-                    PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-                    BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))
-            ) {
+                    PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true); BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
                 String request = in.readLine();
                 logger.info("Requisição recebida: " + request);
 
                 // Obtem o endereço do próximo proxy disponível
                 String proxyAddress = getNextProxyAddress();
-                
+
                 // Envia a resposta para o cliente
                 out.println(proxyAddress);
                 logger.info("Cliente direcionado para o proxy: " + proxyAddress);

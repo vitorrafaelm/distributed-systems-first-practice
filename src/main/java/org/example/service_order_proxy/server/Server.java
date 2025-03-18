@@ -8,12 +8,11 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import org.example.service_order_proxy.threads.ProxyThread;
-
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class Server {
+
     private int proxyPort;    // Socket para receber conexões dos clientes
     private String appServerIp;           // IP do servidor de aplicação
     private int appServerPort;            // Porta do servidor de aplicação
@@ -43,11 +42,11 @@ public class Server {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Nova conexão de cliente: " + clientSocket.getInetAddress().getHostAddress());
 
-                BufferedReader clientInput =
-                    new BufferedReader(
-                            new InputStreamReader(clientSocket.getInputStream()));
-                PrintWriter clientOutput =
-                        new PrintWriter(clientSocket.getOutputStream());
+                BufferedReader clientInput
+                        = new BufferedReader(
+                                new InputStreamReader(clientSocket.getInputStream()));
+                PrintWriter clientOutput
+                        = new PrintWriter(clientSocket.getOutputStream());
 
                 String readLine = clientInput.readLine();
                 JsonObject jsonObjectTemp = JsonParser.parseString(readLine).getAsJsonObject();
@@ -70,11 +69,11 @@ public class Server {
                     clientSocket.close();
                     continue;
                 }
-                
-                // Criar uma thread para tratar este cliente
-                ProxyThread proxyThread = new ProxyThread(logFile, appServerIp, appServerPort, readLine, clientOutput, clientInput, clientSocket);
-                Thread thread = new Thread(proxyThread);
-                thread.start();
+
+                // // Criar uma thread para tratar este cliente
+                // ProxyThread proxyThread = new ProxyThread(logFile, appServerIp, appServerPort, readLine, clientOutput, clientInput, clientSocket);
+                // Thread thread = new Thread(proxyThread);
+                // thread.start();
             }
         } catch (IOException e) {
             System.out.println("Erro ao iniciar o proxy: " + e.getMessage());
