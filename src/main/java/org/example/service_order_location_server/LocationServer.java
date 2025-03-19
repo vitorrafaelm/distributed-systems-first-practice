@@ -8,21 +8,21 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class LocationServer {
     private static final int PORT = 8000;
-    private static final String APP_SERVER_ADDRESS = "localhost";
-    private static final int APP_SERVER_PORT = 54321;
-
-    private static final Map<String, String> proxyAddresses = new HashMap<>();
 
     private static final Logger logger = Logger.getLogger("LocationServerLog");
+
+    private static final List<String> proxyServers = new ArrayList<>();
+    private static final boolean useRandomBalancing = false;
+    private static int currentProxyIndex = 0;
 
     public static void main(String[] args) {
         setupLogger();
@@ -31,6 +31,9 @@ public class LocationServer {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Servidor de Localização iniciado na porta " + PORT);
             logger.info("Servidor de Localização iniciado na porta " + PORT);
+
+            System.out.println("Proxies registrados: " + proxyServers);
+            logger.info("Proxys registrados: " + proxyServers);
 
             // Loop infinito para aceitar conexões
             while (true) {
@@ -66,9 +69,21 @@ public class LocationServer {
     }
 
     private static void setupProxyAddresses() {
-        proxyAddresses.put("localhost1", "localhost:54321");
-        proxyAddresses.put("localhost2", "localhost:54321");
-        proxyAddresses.put("localhost3", "localhost:54321");
+        proxyServers.add("localhost:54329"); // Proxy 1
+        proxyServers.add("localhost:54330"); // Proxy 2
+        proxyServers.add("localhost:54331");
+    }
+
+    private static synchronized String getNextProxyAddress() {
+        if (useRandomBalancing) {
+            // Balanceamento aleatório
+            return proxyServers.get(new Random().nextInt(proxyServers.size()));
+        } else {
+            // Balanceamento Round-Robin
+            String proxy = proxyServers.get(currentProxyIndex);
+            currentProxyIndex = (currentProxyIndex + 1) % proxyServers.size();
+            return proxy;
+        }
     }
 
     static class ClientHandler implements Runnable {
@@ -87,10 +102,12 @@ public class LocationServer {
                 String request = in.readLine();
                 logger.info("Requisição recebida: " + request);
 
-                // Envia a resposta para o cliente
-                out.println(APP_SERVER_ADDRESS + ":" + APP_SERVER_PORT);
-                logger.info("Endereço do servidor de aplicação enviado para: " +
-                        clientSocket.getInetAddress().getHostAddress());
+                String proxyAddress = getNextProxyAddress();
+
+                // Envia a resposta para o cliente que deve ser um dos endereços de proxyAddresses
+                out.println(proxyAddress);
+                logger.info("Cliente direcionado para o proxy: " + proxyAddress);
+                System.out.println("Cliente direcionado para o proxy: " + proxyAddress);
 
                 // Fecha a conexão
                 out.close();

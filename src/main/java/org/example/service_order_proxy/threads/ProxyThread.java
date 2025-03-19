@@ -2,6 +2,7 @@ package org.example.service_order_proxy.threads;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.example.service_order_proxy.rmi.RMIService;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -24,6 +27,7 @@ public class ProxyThread implements Runnable {
     private String appServerIp;           // IP do servidor de aplicação
     private int appServerPort;            // Porta do servidor de aplicação
     private File logFile;
+    Map<String, String> proxies;
 
     // Cache FIFO
     private static final int CACHE_SIZE = 30;
@@ -34,7 +38,7 @@ public class ProxyThread implements Runnable {
         }
     };
 
-    public ProxyThread(File file, String appServerIp, int appServerPort, String readLine, PrintWriter clientOutput, BufferedReader clientInput, Socket clientSocket) {
+    public ProxyThread(File file, String appServerIp, int appServerPort, String readLine, PrintWriter clientOutput, BufferedReader clientInput, Socket clientSocket, Map<String, String> proxies) {
         this.logFile = file;
         this.appServerIp = appServerIp;
         this.appServerPort = appServerPort;
@@ -43,14 +47,14 @@ public class ProxyThread implements Runnable {
         this.clientOutput = clientOutput;
         this.line = readLine;
         this.clientSocket = clientSocket;
-
+        this.proxies = proxies;
     }
 
     @Override
     public void run() {
         try {
             String request = this.line;
-            String response;
+            String response = null;
 
             JsonObject requestJson = JsonParser.parseString(request).getAsJsonObject();
             String operation = requestJson.get("operation").getAsString();
@@ -65,9 +69,20 @@ public class ProxyThread implements Runnable {
                         response = cache.get(id_item);
                     } else {
                         registrarLog("CACHE MISS para operação: " + operation + " [Chave: " + id_item + "]");
-                        response = processarRequisicao(request);
 
-                        cache.put(id_item, response);
+                        // Conectar com outros proxies
+                        for (String key : proxies.keySet()) {
+                            RMIService rmiService = (RMIService) Naming.lookup("rmi://localhost:" + key + "/" + proxies.get(key));
+                            String responsefromRmi = rmiService.getCacheItem(id_item);
+
+                            if (responsefromRmi != null) {
+                                response = responsefromRmi;
+                                cache.put(id_item, response);
+                            } else {
+                                response = processarRequisicao(request);
+                                rmiService.updateCacheItem(id_item, response);
+                            }
+                        }
                     }
                 }
             } else {
@@ -86,6 +101,8 @@ public class ProxyThread implements Runnable {
             clientInput.close();
             clientSocket.close();
         } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (NotBoundException e) {
             throw new RuntimeException(e);
         }
 

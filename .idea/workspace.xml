@@ -5,13 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60bc1f2c-4b9d-4b7e-bf25-b0d6a1d09c83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/RMI/InterfaceServidorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/RMI/RMIServidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/rmi/InterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/rmi/RMIService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/location_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proxy_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/ConnectionJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/ConnectionJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/server/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/server/ServerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_client/ServiceOrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_client/ServiceOrderClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/threads/ProxyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/threads/ProxyThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +55,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "feat/practice-continuation",
     "node.js.detected.package.eslint": "true",
@@ -39,6 +66,88 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.service_order_application" />
+      <recent name="org.example.service_order_proxy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LocationServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service_order_location_server.LocationServer" />
+      <module name="distributed-systems-first-practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service_order_location_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Proxy1" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service_order_proxy.Proxy1" />
+      <module name="distributed-systems-first-practice" />
+      <option name="PROGRAM_PARAMETERS" value="Proxy1 1201 CacheUpdateProxy1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service_order_proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Proxy2" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service_order_proxy.Proxy2" />
+      <module name="distributed-systems-first-practice" />
+      <option name="PROGRAM_PARAMETERS" value="Proxy2 1202 CacheUpdateProxy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service_order_proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Proxy3" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service_order_proxy.Proxy3" />
+      <module name="distributed-systems-first-practice" />
+      <option name="PROGRAM_PARAMETERS" value="Proxy3 1203 CacheUpdateProxy3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service_order_proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceOrderClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service_order_client.ServiceOrderClient" />
+      <module name="distributed-systems-first-practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service_order_client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServiceOrderClient" />
+        <item itemvalue="Application.LocationServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,5 +163,21 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/distributed_systems_first_practice$Main.ic" NAME="Main Coverage Results" MODIFIED="1742265795509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.service_order_proxy.*</FILTER>
+    </SUITE>
   </component>
 </project>

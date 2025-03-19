@@ -9,9 +9,13 @@ public class ConnectionJDBC {
     private Connection connection;
 
     public ConnectionJDBC() throws SQLException {
-        String url = "jdbc:postgresql://localhost:5432/service-soo";
-        String username = "service-soo";
-        String password = "service-soo";
+//        String url = "jdbc:postgresql://localhost:5432/service-soo";
+//        String username = "service-soo";
+//        String password = "service-soo";
+
+        String url = System.getProperty("DB_URL");
+        String username = System.getProperty("DB_USER");
+        String password = System.getProperty("DB_PASSWORD");
 
         try {
             Class.forName("org.postgresql.Driver");

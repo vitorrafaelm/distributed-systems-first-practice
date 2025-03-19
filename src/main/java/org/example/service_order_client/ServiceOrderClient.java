@@ -8,6 +8,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 import com.google.gson.JsonObject;
+import jdk.internal.org.jline.terminal.TerminalBuilder;
 
 public class ServiceOrderClient {
     private static final String LOCATION_SERVER_HOST = "localhost";
@@ -21,6 +22,7 @@ public class ServiceOrderClient {
     public ServiceOrderClient() {
         scanner = new Scanner(System.in);
         this.connectToLocationServer();
+        this.insertInitialServiceOrders();
     }
 
     private void connectToLocationServer() {
@@ -59,7 +61,28 @@ public class ServiceOrderClient {
         }
     }
 
-    public void listAllServiceOrders() {
+    private void insertInitialServiceOrders(){
+
+        System.out.println("Inserindo 100 ordens de serviços iniciais...");
+        for (int i = 1; i <= 100; i++){
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("operation", "add");
+            jsonObject.addProperty("code", "OS" + i);
+            jsonObject.addProperty("name", "Ordem de service" + i);
+            jsonObject.addProperty("description", "Descrição da OS" + i);
+            jsonObject.addProperty("authorization", PROXY_AUTH_TOKEN);
+
+            String operation = jsonObject.toString();
+            String result = sendRequest(operation);
+
+            System.out.println("Inserindo OS " + i + ": " + result);
+        }
+        System.out.println("Inserção de 100 ordens de serviço concluída.");
+
+    }
+
+
+    public String listAllServiceOrders() {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("operation", "list");
         jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
@@ -68,9 +91,10 @@ public class ServiceOrderClient {
         String result = sendRequest(operation);
         System.out.println("\nList all service orders:");
         System.out.println(result);
+        return result;
     }
 
-    public void createServiceOrder() {
+    public String createServiceOrder() {
         System.out.println("\nCadastro de Nova Ordem de Serviço");
 
         System.out.print("Código: ");
@@ -95,9 +119,11 @@ public class ServiceOrderClient {
 
         System.out.println("\nResultado do cadastro:");
         System.out.println(result);
+        return result;
+
     }
 
-    public void updateServiceOrder() {
+    public String updateServiceOrder() {
         System.out.println("\nAlteração de Ordem de Serviço");
 
         System.out.print("Digite o Id da ordem a ser atualizada: ");
@@ -127,9 +153,10 @@ public class ServiceOrderClient {
 
         System.out.println("\nResultado da alteração:");
         System.out.println(result);
+        return result;
     }
 
-    public void removeServiceOrder() {
+    public String removeServiceOrder() {
         System.out.print("\nDigite o Id da OS a ser removida: ");
         String code = scanner.nextLine();
 
@@ -147,12 +174,14 @@ public class ServiceOrderClient {
             String result = sendRequest(operation);
             System.out.println("\nResultado da remoção:");
             System.out.println(result);
+            return result;
         } else {
             System.out.println("Operação cancelada.");
+            return null;
         }
     }
 
-    public void getRecordCount() {
+    public String getRecordCount() {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("operation", "list_quantity");
         jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
@@ -161,9 +190,11 @@ public class ServiceOrderClient {
         String result = sendRequest(operation);
         System.out.println("\nQuantidade de registros:");
         System.out.println(result);
+
+        return result;
     }
 
-    public void searchServiceOrder() {
+    public String searchServiceOrder() {
         System.out.println("\nBuscar Ordem de Serviço");
 
         System.out.print("Digite o Id da ordem a ser buscada: ");
@@ -180,6 +211,7 @@ public class ServiceOrderClient {
         String result = sendRequest(operation);
         System.out.println("\nBuscar service orders:");
         System.out.println(result);
+        return result;
     }
 
     public void showMenu() {
@@ -195,25 +227,49 @@ public class ServiceOrderClient {
             System.out.print("\nEscolha uma opção: ");
 
             String option = scanner.nextLine();
-
+            String result = "";
             switch (option) {
                 case "1":
-                    listAllServiceOrders();
+                    result = listAllServiceOrders();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "2":
-                    createServiceOrder();
+                    result = createServiceOrder();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "3":
-                    updateServiceOrder();
+                    result = updateServiceOrder();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "4":
-                    removeServiceOrder();
+                    result = removeServiceOrder();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "5":
-                    getRecordCount();
+                    result = getRecordCount();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "6":
-                    searchServiceOrder();
+                    result = searchServiceOrder();
+                    while (result.equals("ERRO: Connection refused")) {
+                        this.connectToLocationServer();
+                        result = listAllServiceOrders();
+                    }
                     break;
                 case "7":
                     System.out.println("Encerrando o programa. Até mais!");

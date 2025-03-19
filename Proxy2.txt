@@ -1,0 +1,17 @@
+Tue Mar 18 21:03:27 BRT 2025 - Requisição: {"operation":"list","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Tue Mar 18 21:03:26 BRT 2025
+Tue Mar 18 21:03:27 BRT 2025 - Servidor de aplicação: {"operation":"list","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: [{"code":"nome da ordem","time":"2025-03-12 21:08:28.919362","id":5},{"code":"nome da ordem","time":"2025-03-12 21:09:50.587859","id":6},{"code":"nome da ordem","time":"2025-03-12 21:11:00.225269","id":7},{"code":"codigo da ordem","description":"description da ordem","name":"nome da ordem","time":"2025-03-12 21:11:01.604962","id":8},{"code":"codigo da ordem","description":"description da ordem","name":"nome da ordem","time":"2025-03-12 21:14:28.075131","id":9},{"code":"codigo da ordem","description":"description da ordem","name":"nome da ordem","time":"2025-03-12 21:15:03.868309","id":10},{"code":"codigo da ordem updated","description":"description da ordem updated","name":"nome da ordem updated","time":"2025-03-12 21:22:12.145987","id":11},{"code":"codigo da ordem updated","description":"description da ordem updated","name":"nome da ordem updated","time":"2025-03-12 21:23:17.48094","id":12},{"code":"nome da ordem","name":"nome da ordem updated","time":"2025-03-12 21:07:05.155936","id":4},{"code":"codigo da ordem updated","description":"description da ordem updated","name":"nome da ordem updated","time":"2025-03-12 21:06:12.972744","id":3},{"code":"13 code update","description":"13 description update","name":"13 nome update","time":"2025-03-12 21:35:42.607229","id":13}]
+Tue Mar 18 21:03:27 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Tue Mar 18 21:03:46 BRT 2025 - CACHE MISS para operação: search [Chave: 13]
+Tue Mar 18 21:03:46 BRT 2025 - Requisição: {"operation":"search","id":"13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Tue Mar 18 21:03:46 BRT 2025
+Tue Mar 18 21:03:46 BRT 2025 - Servidor de aplicação: {"operation":"search","id":"13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"13 code update","description":"13 description update","time":"2025-03-12 21:35:42.607229","id":13}
+Tue Mar 18 21:03:46 BRT 2025 - Requisição: {"operation":"search","id":"13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Tue Mar 18 21:03:46 BRT 2025
+Tue Mar 18 21:03:46 BRT 2025 - Servidor de aplicação: {"operation":"search","id":"13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"13 code update","description":"13 description update","time":"2025-03-12 21:35:42.607229","id":13}
+Tue Mar 18 21:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Tue Mar 18 21:25:02 BRT 2025 - CACHE MISS para operação: getCacheItem [Chave: 13] on proxy: Proxy2
+Tue Mar 18 21:25:03 BRT 2025 - CACHE MISS para operação: updateCacheItem [Chave: 13] on proxy: Proxy2
+Tue Mar 18 21:25:48 BRT 2025 - CACHE MISS para operação: getCacheItem [Chave: 13] on proxy: Proxy2
+Tue Mar 18 21:26:59 BRT 2025 - CACHE MISS para operação: getCacheItem [Chave: 13] on proxy: Proxy2
