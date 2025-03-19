@@ -2,7 +2,7 @@ package org.example.service_order_application;
 
 import org.example.service_order_application.server.ServerService;
 
-public class App
+public class App1
 {
     public static void main( String[] args )
     {

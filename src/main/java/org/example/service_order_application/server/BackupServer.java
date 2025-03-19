@@ -13,24 +13,24 @@ import java.sql.SQLException;
 import org.example.service_order_application.RMI.InterfaceServidorImpl;
 import org.example.service_order_application.RMI.RMIServidor;
 
-public class ServerService {
+public class BackupServer {
 
     private static final String server = "localhost";
-    private static final int port = 54322; // Porta do servidor primário
+    private static final int port = 54323; // Porta diferente para o backup
 
-    public void initializeServer() {
+    public void initializeBackupServer() {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
-            System.out.println("Server initiated in port: " + port);
+            System.out.println("Backup Server initiated in port: " + port);
 
             RequestRedirect requestRedirect = new RequestRedirect();
             requestRedirect.setUpAllowedOperations();
 
             // Registrar o serviço RMI
-            LocateRegistry.createRegistry(1800); // Porta padrão do RMI
+            LocateRegistry.createRegistry(1700); // Porta diferente para o RMI do backup
             RMIServidor appServerService = new InterfaceServidorImpl(requestRedirect);
-            Naming.rebind("rmi://localhost:1800/AppServerService", appServerService);
+            Naming.rebind("rmi://localhost:1700/AppServerService", appServerService);
 
-            System.out.println("Servidor RMI iniciado no servidor de aplicação primário");
+            System.out.println("Servidor RMI iniciado no servidor de aplicação backup");
 
             while (true) {
                 Socket socket = serverSocket.accept();
