@@ -8,11 +8,11 @@ import java.net.Socket;
 import java.util.Scanner;
 
 import com.google.gson.JsonObject;
-import jdk.internal.org.jline.terminal.TerminalBuilder;
 
 public class ServiceOrderClient {
-    private static final String LOCATION_SERVER_HOST = "localhost";
-    private static final int LOCATION_SERVER_PORT = 8000;
+
+    private static final String LOCATION_SERVER_HOST = "192.168.172.134"; //IP Vitor
+    private static final int LOCATION_SERVER_PORT = 9876;
     private static final String PROXY_AUTH_TOKEN = "90e476f3-5ccc-4143-8e30-f4b82b6dd131";
 
     private String applicationServerProxyHost;
@@ -23,10 +23,13 @@ public class ServiceOrderClient {
         scanner = new Scanner(System.in);
         this.connectToLocationServer();
         this.insertInitialServiceOrders();
+        this.insertInitialServiceOrders2();
+        this.insertInitialServiceOrders3();
     }
 
     private void connectToLocationServer() {
-       try (Socket socket = new Socket(LOCATION_SERVER_HOST, LOCATION_SERVER_PORT)) {
+        try {
+            Socket socket = new Socket(LOCATION_SERVER_HOST, LOCATION_SERVER_PORT);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
@@ -44,10 +47,7 @@ public class ServiceOrderClient {
 
     private String sendRequest(String request) {
         try (
-                Socket socket = new Socket(applicationServerProxyHost, applicationServerProxyPort);
-                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
-        ) {
+                Socket socket = new Socket(applicationServerProxyHost, applicationServerProxyPort); PrintWriter out = new PrintWriter(socket.getOutputStream(), true); BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
             out.println(request);
             String line = in.readLine();
 
@@ -61,16 +61,54 @@ public class ServiceOrderClient {
         }
     }
 
-    private void insertInitialServiceOrders(){
+    private void insertInitialServiceOrders() {
 
         System.out.println("Inserindo 100 ordens de serviços iniciais...");
-        for (int i = 1; i <= 100; i++){
+        for (int i = 1; i <= 40; i++) {
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("operation", "add");
             jsonObject.addProperty("code", "OS" + i);
             jsonObject.addProperty("name", "Ordem de service" + i);
             jsonObject.addProperty("description", "Descrição da OS" + i);
-            jsonObject.addProperty("authorization", PROXY_AUTH_TOKEN);
+            jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
+
+            String operation = jsonObject.toString();
+            String result = sendRequest(operation);
+
+            System.out.println("Inserindo OS " + i + ": " + result);
+        }
+
+    }
+
+    private void insertInitialServiceOrders2() {
+
+        System.out.println("Inserindo 100 ordens de serviços iniciais...");
+        for (int i = 1; i <= 40; i++) {
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("operation", "add");
+            jsonObject.addProperty("code", "OS" + i);
+            jsonObject.addProperty("name", "Ordem de service" + i);
+            jsonObject.addProperty("description", "Descrição da OS" + i);
+            jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
+
+            String operation = jsonObject.toString();
+            String result = sendRequest(operation);
+
+            System.out.println("Inserindo OS " + i + ": " + result);
+        }
+
+    }
+
+    private void insertInitialServiceOrders3() {
+
+        System.out.println("Inserindo 100 ordens de serviços iniciais...");
+        for (int i = 1; i <= 10; i++) {
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("operation", "add");
+            jsonObject.addProperty("code", "OS" + i);
+            jsonObject.addProperty("name", "Ordem de service" + i);
+            jsonObject.addProperty("description", "Descrição da OS" + i);
+            jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
 
             String operation = jsonObject.toString();
             String result = sendRequest(operation);
@@ -80,7 +118,6 @@ public class ServiceOrderClient {
         System.out.println("Inserção de 100 ordens de serviço concluída.");
 
     }
-
 
     public String listAllServiceOrders() {
         JsonObject jsonObject = new JsonObject();

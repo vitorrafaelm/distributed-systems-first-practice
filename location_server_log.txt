@@ -178,3 +178,7 @@ Mar 18, 2025 9:03:59 PM org.example.service_order_location_server.LocationServer
 INFO: Requisição recebida: GET_APPLICATION_SERVER
 Mar 18, 2025 9:03:59 PM org.example.service_order_location_server.LocationServer$ClientHandler run
 INFO: Cliente direcionado para o proxy: localhost:54331
+mar. 19, 2025 5:56:45 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Servidor de Localização iniciado na porta 8000
+mar. 19, 2025 5:56:45 PM org.example.service_order_location_server.LocationServer main
+INFORMAÇÕES: Proxys registrados: [localhost:54329, localhost:54330, localhost:54331]
