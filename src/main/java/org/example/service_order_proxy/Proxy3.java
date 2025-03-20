@@ -1,23 +1,23 @@
 package org.example.service_order_proxy;
 
-
-import org.example.service_order_proxy.server.Server;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+import org.example.service_order_proxy.server.Server;
+
 public class Proxy3 {
+
     public static void main(String[] args) {
         int AplicationServerPort = 54322;
 
-        String proxyName = args[0];
-        String rmiPort = args[1];
-        String rmiName = args[2];
+        String proxyName = "Proxy3";
+        String rmiPort = "1203";
+        String rmiName = "CacheUpdateProxy3";
         int proxyPort = 54331;
-        String AplicationServerIp = "localhost";
+        String AplicationServerIp = "192.168.172.134";
         Map<String, String> proxies = new HashMap<>();
-        
+
         try {
             proxies.put("1201", "CacheUpdateProxy1");
             proxies.put("1202", "CacheUpdateProxy2");

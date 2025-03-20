@@ -86,3 +86,450 @@ Tue Mar 18 23:07:31 BRT 2025 - Estado atual da cache:
 Tamanho: 1/30
 0: 13
 
+Wed Mar 19 18:03:45 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:45 BRT 2025 - Requisição: {"operation":"add","code":"OS1","name":"Ordem de service1","description":"Descrição da OS1","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:45 BRT 2025
+Wed Mar 19 18:03:45 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS1","name":"Ordem de service1","description":"Descrição da OS1","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS1","description":"Descrição da OS1","name":"Ordem de service1","cacheId":"2a624b5e-867e-4367-bd90-bed730a88204","id":18}
+Wed Mar 19 18:03:45 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:45 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:45 BRT 2025 - Requisição: {"operation":"add","code":"OS2","name":"Ordem de service2","description":"Descrição da OS2","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:45 BRT 2025
+Wed Mar 19 18:03:45 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS2","name":"Ordem de service2","description":"Descrição da OS2","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS2","description":"Descrição da OS2","name":"Ordem de service2","cacheId":"d3c65775-8fae-44d9-b89d-9def3d67111a","id":19}
+Wed Mar 19 18:03:45 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:45 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:45 BRT 2025 - Requisição: {"operation":"add","code":"OS3","name":"Ordem de service3","description":"Descrição da OS3","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:45 BRT 2025
+Wed Mar 19 18:03:45 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS3","name":"Ordem de service3","description":"Descrição da OS3","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS3","description":"Descrição da OS3","name":"Ordem de service3","cacheId":"364002c8-49c2-4965-a687-5fd0899bd7cb","id":20}
+Wed Mar 19 18:03:45 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:45 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:45 BRT 2025 - Requisição: {"operation":"add","code":"OS4","name":"Ordem de service4","description":"Descrição da OS4","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:45 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS4","name":"Ordem de service4","description":"Descrição da OS4","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS4","description":"Descrição da OS4","name":"Ordem de service4","cacheId":"f3416123-c74e-481f-a162-4b3524293e91","id":21}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS5","name":"Ordem de service5","description":"Descrição da OS5","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS5","name":"Ordem de service5","description":"Descrição da OS5","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS5","description":"Descrição da OS5","name":"Ordem de service5","cacheId":"b83dd7fb-e712-461e-ad48-ec4f52b7d871","id":22}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS6","name":"Ordem de service6","description":"Descrição da OS6","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS6","name":"Ordem de service6","description":"Descrição da OS6","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS6","description":"Descrição da OS6","name":"Ordem de service6","cacheId":"43e8ceaa-5e1f-43c6-9943-d69be6cd5981","id":23}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS7","name":"Ordem de service7","description":"Descrição da OS7","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS7","name":"Ordem de service7","description":"Descrição da OS7","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS7","description":"Descrição da OS7","name":"Ordem de service7","cacheId":"2d403eb2-d7a9-46ae-abc1-3a9b2f3d9eee","id":24}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS8","name":"Ordem de service8","description":"Descrição da OS8","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS8","name":"Ordem de service8","description":"Descrição da OS8","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS8","description":"Descrição da OS8","name":"Ordem de service8","cacheId":"6166b08e-dad0-478e-bafb-d33053e04de8","id":25}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS9","name":"Ordem de service9","description":"Descrição da OS9","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS9","name":"Ordem de service9","description":"Descrição da OS9","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS9","description":"Descrição da OS9","name":"Ordem de service9","cacheId":"bc6086db-1d3c-4f36-be64-10e73e1806af","id":26}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS10","name":"Ordem de service10","description":"Descrição da OS10","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS10","name":"Ordem de service10","description":"Descrição da OS10","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS10","description":"Descrição da OS10","name":"Ordem de service10","cacheId":"b4c361c5-0f7c-43c4-a186-4e30b72efad0","id":27}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS11","name":"Ordem de service11","description":"Descrição da OS11","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS11","name":"Ordem de service11","description":"Descrição da OS11","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS11","description":"Descrição da OS11","name":"Ordem de service11","cacheId":"ab81b763-ba53-4e8b-bf8d-cad670be7e61","id":28}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS12","name":"Ordem de service12","description":"Descrição da OS12","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS12","name":"Ordem de service12","description":"Descrição da OS12","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS12","description":"Descrição da OS12","name":"Ordem de service12","cacheId":"0469810d-f019-4004-b32a-284bd1e580b4","id":29}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS13","name":"Ordem de service13","description":"Descrição da OS13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS13","name":"Ordem de service13","description":"Descrição da OS13","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS13","description":"Descrição da OS13","name":"Ordem de service13","cacheId":"86167070-4178-4d60-8fc4-8ed7dd784473","id":30}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS14","name":"Ordem de service14","description":"Descrição da OS14","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS14","name":"Ordem de service14","description":"Descrição da OS14","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS14","description":"Descrição da OS14","name":"Ordem de service14","cacheId":"11d44daf-c273-4518-9e26-9807c7192260","id":31}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS15","name":"Ordem de service15","description":"Descrição da OS15","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS15","name":"Ordem de service15","description":"Descrição da OS15","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS15","description":"Descrição da OS15","name":"Ordem de service15","cacheId":"b95b96ff-14fa-420f-acab-3c2676a1088d","id":32}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS16","name":"Ordem de service16","description":"Descrição da OS16","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:46 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS16","name":"Ordem de service16","description":"Descrição da OS16","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS16","description":"Descrição da OS16","name":"Ordem de service16","cacheId":"47b358a1-8585-42ad-bfc8-69aae2f5f1ad","id":33}
+Wed Mar 19 18:03:46 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:46 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:46 BRT 2025 - Requisição: {"operation":"add","code":"OS17","name":"Ordem de service17","description":"Descrição da OS17","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:46 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS17","name":"Ordem de service17","description":"Descrição da OS17","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS17","description":"Descrição da OS17","name":"Ordem de service17","cacheId":"9de30c9b-871b-4652-a965-d048d5c5a971","id":34}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS18","name":"Ordem de service18","description":"Descrição da OS18","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS18","name":"Ordem de service18","description":"Descrição da OS18","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS18","description":"Descrição da OS18","name":"Ordem de service18","cacheId":"21060ba7-d07f-4848-aa83-bf32a3ee1d35","id":35}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS19","name":"Ordem de service19","description":"Descrição da OS19","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS19","name":"Ordem de service19","description":"Descrição da OS19","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS19","description":"Descrição da OS19","name":"Ordem de service19","cacheId":"168477e4-70c3-4055-bcb8-8be137c70ffb","id":36}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS20","name":"Ordem de service20","description":"Descrição da OS20","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS20","name":"Ordem de service20","description":"Descrição da OS20","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS20","description":"Descrição da OS20","name":"Ordem de service20","cacheId":"1478966b-4497-466a-b46b-6ae3f6d1231a","id":37}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS21","name":"Ordem de service21","description":"Descrição da OS21","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS21","name":"Ordem de service21","description":"Descrição da OS21","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS21","description":"Descrição da OS21","name":"Ordem de service21","cacheId":"86113649-f987-4b44-94e7-408f59cb8f4b","id":38}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS22","name":"Ordem de service22","description":"Descrição da OS22","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS22","name":"Ordem de service22","description":"Descrição da OS22","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS22","description":"Descrição da OS22","name":"Ordem de service22","cacheId":"4627d33d-f295-42a8-91c2-0384d15730a4","id":39}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS23","name":"Ordem de service23","description":"Descrição da OS23","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS23","name":"Ordem de service23","description":"Descrição da OS23","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS23","description":"Descrição da OS23","name":"Ordem de service23","cacheId":"c10c9434-f269-4168-a61c-24952acf516f","id":40}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS24","name":"Ordem de service24","description":"Descrição da OS24","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS24","name":"Ordem de service24","description":"Descrição da OS24","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS24","description":"Descrição da OS24","name":"Ordem de service24","cacheId":"4a9badb8-c5e2-4768-847e-efa2550c1030","id":41}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS25","name":"Ordem de service25","description":"Descrição da OS25","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS25","name":"Ordem de service25","description":"Descrição da OS25","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS25","description":"Descrição da OS25","name":"Ordem de service25","cacheId":"82e48479-e9f4-4914-bbc8-ab4d4bce277f","id":42}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS26","name":"Ordem de service26","description":"Descrição da OS26","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS26","name":"Ordem de service26","description":"Descrição da OS26","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS26","description":"Descrição da OS26","name":"Ordem de service26","cacheId":"53a973ae-ab3f-4b27-a045-62a5a8bd8399","id":43}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS27","name":"Ordem de service27","description":"Descrição da OS27","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:47 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS27","name":"Ordem de service27","description":"Descrição da OS27","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS27","description":"Descrição da OS27","name":"Ordem de service27","cacheId":"fc5e020e-8273-44a3-aec2-d3c381c0426b","id":44}
+Wed Mar 19 18:03:47 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:47 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:47 BRT 2025 - Requisição: {"operation":"add","code":"OS28","name":"Ordem de service28","description":"Descrição da OS28","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:47 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS28","name":"Ordem de service28","description":"Descrição da OS28","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS28","description":"Descrição da OS28","name":"Ordem de service28","cacheId":"c26b47b4-e9ff-4902-afe2-6ce3565fd646","id":45}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS29","name":"Ordem de service29","description":"Descrição da OS29","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS29","name":"Ordem de service29","description":"Descrição da OS29","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS29","description":"Descrição da OS29","name":"Ordem de service29","cacheId":"644c1cd0-587f-4b0e-a927-e0101c75143b","id":46}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS30","name":"Ordem de service30","description":"Descrição da OS30","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS30","name":"Ordem de service30","description":"Descrição da OS30","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS30","description":"Descrição da OS30","name":"Ordem de service30","cacheId":"454d58a2-6943-4aa8-9aa0-253468685fa4","id":47}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS31","name":"Ordem de service31","description":"Descrição da OS31","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS31","name":"Ordem de service31","description":"Descrição da OS31","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS31","description":"Descrição da OS31","name":"Ordem de service31","cacheId":"7775b101-aed4-4db8-bf75-757ae67bec80","id":48}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS32","name":"Ordem de service32","description":"Descrição da OS32","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS32","name":"Ordem de service32","description":"Descrição da OS32","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS32","description":"Descrição da OS32","name":"Ordem de service32","cacheId":"1dae872b-d18e-4b57-ba8c-30b2e492bccd","id":49}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS33","name":"Ordem de service33","description":"Descrição da OS33","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS33","name":"Ordem de service33","description":"Descrição da OS33","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS33","description":"Descrição da OS33","name":"Ordem de service33","cacheId":"c112b955-6b91-41db-8ae4-0e8ccab55248","id":50}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS34","name":"Ordem de service34","description":"Descrição da OS34","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS34","name":"Ordem de service34","description":"Descrição da OS34","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS34","description":"Descrição da OS34","name":"Ordem de service34","cacheId":"67983c82-3fa7-4a9b-8163-f4003a4a0d89","id":51}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS35","name":"Ordem de service35","description":"Descrição da OS35","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS35","name":"Ordem de service35","description":"Descrição da OS35","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS35","description":"Descrição da OS35","name":"Ordem de service35","cacheId":"5d2be6fd-491c-4c65-bee4-9cedf030a1c4","id":52}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS36","name":"Ordem de service36","description":"Descrição da OS36","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS36","name":"Ordem de service36","description":"Descrição da OS36","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS36","description":"Descrição da OS36","name":"Ordem de service36","cacheId":"9e47ce87-8fd1-48e7-84a3-818317e57bdf","id":53}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS37","name":"Ordem de service37","description":"Descrição da OS37","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:48 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS37","name":"Ordem de service37","description":"Descrição da OS37","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS37","description":"Descrição da OS37","name":"Ordem de service37","cacheId":"5ec3d9d7-9161-4c74-a189-38552484ee45","id":54}
+Wed Mar 19 18:03:48 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:48 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:48 BRT 2025 - Requisição: {"operation":"add","code":"OS38","name":"Ordem de service38","description":"Descrição da OS38","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:48 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS38","name":"Ordem de service38","description":"Descrição da OS38","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS38","description":"Descrição da OS38","name":"Ordem de service38","cacheId":"d804ea7e-d691-49a2-9a27-963723660f8c","id":55}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS39","name":"Ordem de service39","description":"Descrição da OS39","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS39","name":"Ordem de service39","description":"Descrição da OS39","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS39","description":"Descrição da OS39","name":"Ordem de service39","cacheId":"ee5c5e66-be62-455c-9d7f-d8cc5c5bc04b","id":56}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS40","name":"Ordem de service40","description":"Descrição da OS40","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS40","name":"Ordem de service40","description":"Descrição da OS40","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS40","description":"Descrição da OS40","name":"Ordem de service40","cacheId":"27b7a38b-7126-457a-ad46-a498d61b5c09","id":57}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS41","name":"Ordem de service41","description":"Descrição da OS41","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS41","name":"Ordem de service41","description":"Descrição da OS41","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS41","description":"Descrição da OS41","name":"Ordem de service41","cacheId":"f3909a5d-b907-4a3b-bbee-05a18203224c","id":58}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS42","name":"Ordem de service42","description":"Descrição da OS42","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS42","name":"Ordem de service42","description":"Descrição da OS42","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS42","description":"Descrição da OS42","name":"Ordem de service42","cacheId":"5c76ff9f-91be-43a7-8acf-7c7f1f1fe779","id":59}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS43","name":"Ordem de service43","description":"Descrição da OS43","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS43","name":"Ordem de service43","description":"Descrição da OS43","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS43","description":"Descrição da OS43","name":"Ordem de service43","cacheId":"f10b5cb4-346b-4a98-8449-bfc1ad5901f0","id":60}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS44","name":"Ordem de service44","description":"Descrição da OS44","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS44","name":"Ordem de service44","description":"Descrição da OS44","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS44","description":"Descrição da OS44","name":"Ordem de service44","cacheId":"1e85e2ff-df42-4c83-9773-3668177f0164","id":61}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS45","name":"Ordem de service45","description":"Descrição da OS45","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS45","name":"Ordem de service45","description":"Descrição da OS45","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS45","description":"Descrição da OS45","name":"Ordem de service45","cacheId":"1930d71d-3d45-4dfa-8f39-39cde565e1d4","id":62}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS46","name":"Ordem de service46","description":"Descrição da OS46","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS46","name":"Ordem de service46","description":"Descrição da OS46","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS46","description":"Descrição da OS46","name":"Ordem de service46","cacheId":"86a0b743-65b9-406d-9886-bf073a699270","id":63}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS47","name":"Ordem de service47","description":"Descrição da OS47","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:03:49 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS47","name":"Ordem de service47","description":"Descrição da OS47","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS47","description":"Descrição da OS47","name":"Ordem de service47","cacheId":"b8840884-7f2b-4fb8-a59e-9c45a1579788","id":64}
+Wed Mar 19 18:03:49 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:03:49 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:03:49 BRT 2025 - Requisição: {"operation":"add","code":"OS48","name":"Ordem de service48","description":"Descrição da OS48","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:03:49 BRT 2025
+Wed Mar 19 18:07:39 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS48","name":"Ordem de service48","description":"Descrição da OS48","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: null
+Wed Mar 19 18:07:39 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:39 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:39 BRT 2025 - Requisição: {"operation":"add","code":"OS49","name":"Ordem de service49","description":"Descrição da OS49","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:39 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS49","name":"Ordem de service49","description":"Descrição da OS49","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS49","description":"Descrição da OS49","name":"Ordem de service49","cacheId":"bae778a6-b83a-4342-b8f5-eb3e00d7620a","id":65}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS50","name":"Ordem de service50","description":"Descrição da OS50","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS50","name":"Ordem de service50","description":"Descrição da OS50","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS50","description":"Descrição da OS50","name":"Ordem de service50","cacheId":"15b13f0d-a2fa-4cc1-8182-107273e6beec","id":66}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS51","name":"Ordem de service51","description":"Descrição da OS51","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS51","name":"Ordem de service51","description":"Descrição da OS51","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS51","description":"Descrição da OS51","name":"Ordem de service51","cacheId":"07d7c58a-532e-4921-a908-5251276ab128","id":67}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS52","name":"Ordem de service52","description":"Descrição da OS52","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS52","name":"Ordem de service52","description":"Descrição da OS52","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS52","description":"Descrição da OS52","name":"Ordem de service52","cacheId":"b3bfe7d8-7079-4004-9a01-a70e8701e108","id":68}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS53","name":"Ordem de service53","description":"Descrição da OS53","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS53","name":"Ordem de service53","description":"Descrição da OS53","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS53","description":"Descrição da OS53","name":"Ordem de service53","cacheId":"f0e976b7-a8b3-4a2d-ace4-fb843fa4ced1","id":69}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS54","name":"Ordem de service54","description":"Descrição da OS54","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS54","name":"Ordem de service54","description":"Descrição da OS54","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS54","description":"Descrição da OS54","name":"Ordem de service54","cacheId":"d41739ad-1e2a-42f3-bdf3-8b35656a9b73","id":70}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS55","name":"Ordem de service55","description":"Descrição da OS55","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:40 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS55","name":"Ordem de service55","description":"Descrição da OS55","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS55","description":"Descrição da OS55","name":"Ordem de service55","cacheId":"4a4d7606-6f1a-4022-a828-56c6a281ed4c","id":71}
+Wed Mar 19 18:07:40 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:40 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:40 BRT 2025 - Requisição: {"operation":"add","code":"OS56","name":"Ordem de service56","description":"Descrição da OS56","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:40 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS56","name":"Ordem de service56","description":"Descrição da OS56","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS56","description":"Descrição da OS56","name":"Ordem de service56","cacheId":"e2e236a4-8140-40c2-83f0-a780a3b50029","id":72}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS57","name":"Ordem de service57","description":"Descrição da OS57","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS57","name":"Ordem de service57","description":"Descrição da OS57","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS57","description":"Descrição da OS57","name":"Ordem de service57","cacheId":"fedbe224-4cab-4436-bfa1-8ba4f663b873","id":73}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS58","name":"Ordem de service58","description":"Descrição da OS58","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS58","name":"Ordem de service58","description":"Descrição da OS58","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS58","description":"Descrição da OS58","name":"Ordem de service58","cacheId":"1508aa5b-561f-4d7e-87ce-c8f70465083b","id":74}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS59","name":"Ordem de service59","description":"Descrição da OS59","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS59","name":"Ordem de service59","description":"Descrição da OS59","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS59","description":"Descrição da OS59","name":"Ordem de service59","cacheId":"6d88e563-7812-48f8-9c2a-74aa90459d9e","id":75}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS60","name":"Ordem de service60","description":"Descrição da OS60","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS60","name":"Ordem de service60","description":"Descrição da OS60","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS60","description":"Descrição da OS60","name":"Ordem de service60","cacheId":"8b5c42df-efa6-40fb-bf66-405b6489881a","id":76}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS61","name":"Ordem de service61","description":"Descrição da OS61","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS61","name":"Ordem de service61","description":"Descrição da OS61","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS61","description":"Descrição da OS61","name":"Ordem de service61","cacheId":"8562a2ff-a026-433d-8590-68ea82d7e7f5","id":77}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS62","name":"Ordem de service62","description":"Descrição da OS62","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS62","name":"Ordem de service62","description":"Descrição da OS62","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS62","description":"Descrição da OS62","name":"Ordem de service62","cacheId":"d5b9f3ce-b7a9-48f0-96d1-28c6e6e8b2b4","id":78}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS63","name":"Ordem de service63","description":"Descrição da OS63","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS63","name":"Ordem de service63","description":"Descrição da OS63","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS63","description":"Descrição da OS63","name":"Ordem de service63","cacheId":"cec21908-2f2d-470c-9eb2-dd59f67b13ac","id":79}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS64","name":"Ordem de service64","description":"Descrição da OS64","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS64","name":"Ordem de service64","description":"Descrição da OS64","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS64","description":"Descrição da OS64","name":"Ordem de service64","cacheId":"0e96aaea-533f-4dd8-9501-9a50e878bc79","id":80}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS65","name":"Ordem de service65","description":"Descrição da OS65","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS65","name":"Ordem de service65","description":"Descrição da OS65","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS65","description":"Descrição da OS65","name":"Ordem de service65","cacheId":"75dd7efe-460e-4061-8cb8-a7d6d4829d50","id":81}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS66","name":"Ordem de service66","description":"Descrição da OS66","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS66","name":"Ordem de service66","description":"Descrição da OS66","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS66","description":"Descrição da OS66","name":"Ordem de service66","cacheId":"dc2772d3-536b-435b-af5c-97472934642a","id":82}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS67","name":"Ordem de service67","description":"Descrição da OS67","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS67","name":"Ordem de service67","description":"Descrição da OS67","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS67","description":"Descrição da OS67","name":"Ordem de service67","cacheId":"054c0870-5358-49f9-ac68-cf7cf8388936","id":83}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS68","name":"Ordem de service68","description":"Descrição da OS68","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS68","name":"Ordem de service68","description":"Descrição da OS68","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS68","description":"Descrição da OS68","name":"Ordem de service68","cacheId":"e3a52468-a306-4c2d-b130-4f8d7c32bff4","id":84}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS69","name":"Ordem de service69","description":"Descrição da OS69","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:41 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS69","name":"Ordem de service69","description":"Descrição da OS69","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS69","description":"Descrição da OS69","name":"Ordem de service69","cacheId":"e4d63fab-8abd-4b4e-838f-98ad6f6af27e","id":85}
+Wed Mar 19 18:07:41 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:41 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:41 BRT 2025 - Requisição: {"operation":"add","code":"OS70","name":"Ordem de service70","description":"Descrição da OS70","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:41 BRT 2025
+Wed Mar 19 18:07:42 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS70","name":"Ordem de service70","description":"Descrição da OS70","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS70","description":"Descrição da OS70","name":"Ordem de service70","cacheId":"b8919199-5c1f-4949-bafb-4176b528a994","id":86}
+Wed Mar 19 18:07:42 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:42 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:42 BRT 2025 - Requisição: {"operation":"add","code":"OS71","name":"Ordem de service71","description":"Descrição da OS71","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:42 BRT 2025
+Wed Mar 19 18:07:42 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS71","name":"Ordem de service71","description":"Descrição da OS71","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS71","description":"Descrição da OS71","name":"Ordem de service71","cacheId":"23554bbf-11d0-419a-b95a-bdc6162ca689","id":87}
+Wed Mar 19 18:07:42 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:42 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:42 BRT 2025 - Requisição: {"operation":"add","code":"OS72","name":"Ordem de service72","description":"Descrição da OS72","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:42 BRT 2025
+Wed Mar 19 18:07:42 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS72","name":"Ordem de service72","description":"Descrição da OS72","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS72","description":"Descrição da OS72","name":"Ordem de service72","cacheId":"5eefbb7b-b122-457f-8643-135a2b4a9a79","id":88}
+Wed Mar 19 18:07:42 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:42 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:42 BRT 2025 - Requisição: {"operation":"add","code":"OS73","name":"Ordem de service73","description":"Descrição da OS73","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:42 BRT 2025
+Wed Mar 19 18:07:44 BRT 2025 - Servidor de aplicação: {"operation":"add","code":"OS73","name":"Ordem de service73","description":"Descrição da OS73","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: {"code":"OS73","description":"Descrição da OS73","name":"Ordem de service73","cacheId":"1587ef24-dbbf-4ad3-9363-dd1d27bd4047","id":89}
+Wed Mar 19 18:07:44 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:07:44 BRT 2025 - Cache invalidada após operação de escrita: add
+Wed Mar 19 18:07:44 BRT 2025 - Requisição: {"operation":"add","code":"OS74","name":"Ordem de service74","description":"Descrição da OS74","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:07:44 BRT 2025
+Wed Mar 19 18:31:10 BRT 2025 - Requisição: {"operation":"list","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Wed Mar 19 18:31:10 BRT 2025
+Wed Mar 19 18:31:10 BRT 2025 - Servidor de aplicação: {"operation":"list","Authorization":"90e476f3-5ccc-4143-8e30-f4b82b6dd131"} - Response: []
+Wed Mar 19 18:31:10 BRT 2025 - Estado atual da cache:
+Tamanho: 0/30
+
+Wed Mar 19 18:37:49 BRT 2025 - CACHE MISS para operação: getCacheItem [Chave: 170] on proxy: Proxy3
+Wed Mar 19 18:37:49 BRT 2025 - CACHE MISS para operação: updateCacheItem [Chave: 170] on proxy: Proxy3
