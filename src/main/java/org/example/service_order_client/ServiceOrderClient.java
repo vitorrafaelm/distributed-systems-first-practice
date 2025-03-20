@@ -8,7 +8,6 @@ import java.net.Socket;
 import java.util.Scanner;
 
 import com.google.gson.JsonObject;
-import jdk.internal.org.jline.terminal.TerminalBuilder;
 
 public class ServiceOrderClient {
     private static final String LOCATION_SERVER_HOST = "localhost";
@@ -62,7 +61,6 @@ public class ServiceOrderClient {
     }
 
     private void insertInitialServiceOrders(){
-
         System.out.println("Inserindo 100 ordens de serviços iniciais...");
         for (int i = 1; i <= 100; i++){
             JsonObject jsonObject = new JsonObject();

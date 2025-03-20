@@ -5,26 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60bc1f2c-4b9d-4b7e-bf25-b0d6a1d09c83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/RMI/InterfaceServidorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/RMI/RMIServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Proxy3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/rmi/InterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/rmi/RMIService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/location_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/location_server_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proxy_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location_server_log.txt.1" beforeDir="false" afterPath="$PROJECT_DIR$/location_server_log.txt.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/OrderApplication2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/ConnectionJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/ConnectionJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/dao/ServiceOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/database/dao/ServiceOrderDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/server/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_application/server/ServerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_client/ServiceOrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_client/ServiceOrderClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_location_server/LocationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/threads/ProxyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service_order_proxy/threads/ProxyThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServiceOrderClient" />
         <item itemvalue="Application.LocationServer" />
+        <item itemvalue="Application.ServiceOrderClient" />
       </list>
     </recent_temporary>
   </component>

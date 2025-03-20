@@ -2,13 +2,13 @@ package org.example.service_order_application;
 
 import org.example.service_order_application.server.ServerService;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class OrderApplication2
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws SQLException {
         final int port = 54323;
         final int portRmi = 1800;
         final String serviceOrderInstance = "serviceOrderInstance2";

@@ -6,13 +6,9 @@ import java.sql.SQLException;
 
 public class ConnectionJDBC {
     private static ConnectionJDBC instance;
-    private Connection connection;
+    private static Connection connection;
 
     public ConnectionJDBC() throws SQLException {
-//        String url = "jdbc:postgresql://localhost:5432/service-soo";
-//        String username = "service-soo";
-//        String password = "service-soo";
-
         String url = System.getProperty("DB_URL");
         String username = System.getProperty("DB_USER");
         String password = System.getProperty("DB_PASSWORD");
@@ -20,14 +16,14 @@ public class ConnectionJDBC {
         try {
             Class.forName("org.postgresql.Driver");
             this.connection = DriverManager.getConnection(url, username, password);
-            System.out.println("Database Connection Created With success!!");
+            System.out.println("Database Connection Created With success!!" + this.connection.toString());
         } catch (ClassNotFoundException ex) {
             System.out.println("Database Connection Creation Failed : " + ex.getMessage());
         }
     }
 
-    public Connection getConnection() {
-        return this.connection;
+    public static Connection getConnection() {
+        return connection;
     }
 
     public static ConnectionJDBC getInstance() throws SQLException {

@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class LocationServer {
-    private static final int PORT = 8000;
+    private static final int PORT = 9876;
 
     private static final Logger logger = Logger.getLogger("LocationServerLog");
 
@@ -28,12 +29,19 @@ public class LocationServer {
         setupLogger();
         setupProxyAddresses();
 
-        try (ServerSocket serverSocket = new ServerSocket(PORT)) {
+        try (ServerSocket serverSocket = new ServerSocket(PORT, 0, InetAddress.getByName("0.0.0.0"))) {
             System.out.println("Servidor de Localização iniciado na porta " + PORT);
             logger.info("Servidor de Localização iniciado na porta " + PORT);
 
             System.out.println("Proxies registrados: " + proxyServers);
             logger.info("Proxys registrados: " + proxyServers);
+
+            System.out.println("Servidor de Localização iniciado no IP " + serverSocket.getLocalPort() + "/" + serverSocket.getInetAddress());
+
+            InetAddress localHost = InetAddress.getLocalHost();
+            String ipAddress = localHost.getHostAddress();
+
+            System.out.println(ipAddress);
 
             // Loop infinito para aceitar conexões
             while (true) {
@@ -69,9 +77,9 @@ public class LocationServer {
     }
 
     private static void setupProxyAddresses() {
-        proxyServers.add("localhost:54329"); // Proxy 1
-        proxyServers.add("localhost:54330"); // Proxy 2
-        proxyServers.add("localhost:54331");
+        proxyServers.add("192.168.172.251:54329"); // Proxy 1
+        proxyServers.add("192.168.172.251:54330"); // Proxy 2
+        proxyServers.add("192.168.172.251:54331");
     }
 
     private static synchronized String getNextProxyAddress() {

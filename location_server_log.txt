@@ -178,3 +178,139 @@ Mar 18, 2025 9:03:59 PM org.example.service_order_location_server.LocationServer
 INFO: Requisição recebida: GET_APPLICATION_SERVER
 Mar 18, 2025 9:03:59 PM org.example.service_order_location_server.LocationServer$ClientHandler run
 INFO: Cliente direcionado para o proxy: localhost:54331
+Mar 19, 2025 5:12:00 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:12:00 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:21:34 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:21:34 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:21:49 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:21:49 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:22:50 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:22:50 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:543]
+Mar 19, 2025 5:23:57 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:23:57 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54329, 172.20.10.3:54341]
+Mar 19, 2025 5:23:57 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado no IP 0.0.0.0/0.0.0.0
+Mar 19, 2025 5:24:13 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:24:13 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54329, 172.20.10.3:54341]
+Mar 19, 2025 5:24:13 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado no IP 0.0.0.0/0.0.0.0
+Mar 19, 2025 5:24:25 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:24:26 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54329, 172.20.10.3:54341]
+Mar 19, 2025 5:24:26 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado no IP 0.0.0.0/0.0.0.0
+Mar 19, 2025 5:25:06 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:25:06 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:25:06 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado no IP 0.0.0.0/0.0.0.0
+Mar 19, 2025 5:25:32 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:25:32 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:25:32 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado no IP 0.0.0.0/0.0.0.0
+Mar 19, 2025 5:26:59 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 8000
+Mar 19, 2025 5:26:59 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:28:49 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 9876
+Mar 19, 2025 5:28:49 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:29:23 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 9876
+Mar 19, 2025 5:29:23 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:32:00 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 9876
+Mar 19, 2025 5:32:00 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:36:27 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 9876
+Mar 19, 2025 5:36:27 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [172.20.10.3:54329, 172.20.10.3:54330, 172.20.10.3:54331]
+Mar 19, 2025 5:48:53 PM org.example.service_order_location_server.LocationServer main
+INFO: Servidor de Localização iniciado na porta 9876
+Mar 19, 2025 5:48:53 PM org.example.service_order_location_server.LocationServer main
+INFO: Proxys registrados: [192.168.172.251:54329, 192.168.172.251:54330, 192.168.172.251:54331]
+Mar 19, 2025 5:49:40 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 5:49:40 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 5:49:40 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54329
+Mar 19, 2025 5:57:06 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 5:57:06 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 5:57:06 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54330
+Mar 19, 2025 5:58:28 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 5:58:28 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 5:58:28 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54331
+Mar 19, 2025 5:59:45 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 5:59:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 5:59:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54329
+Mar 19, 2025 6:02:24 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:02:24 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:02:24 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54330
+Mar 19, 2025 6:03:45 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:03:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:03:45 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54331
+Mar 19, 2025 6:15:58 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:15:58 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:15:58 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54329
+Mar 19, 2025 6:18:04 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:18:04 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:18:04 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54330
+Mar 19, 2025 6:31:06 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:31:06 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:31:06 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54331
+Mar 19, 2025 6:31:29 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:31:29 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:31:29 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54329
+Mar 19, 2025 6:32:52 PM org.example.service_order_location_server.LocationServer main
+INFO: Nova conexão de cliente: 192.168.172.251
+Mar 19, 2025 6:32:52 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Requisição recebida: GET_APPLICATION_SERVER
+Mar 19, 2025 6:32:52 PM org.example.service_order_location_server.LocationServer$ClientHandler run
+INFO: Cliente direcionado para o proxy: 192.168.172.251:54330

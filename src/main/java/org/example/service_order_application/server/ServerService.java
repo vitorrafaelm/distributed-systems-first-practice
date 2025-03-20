@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.example.service_order_application.RMI.InterfaceServidorImpl;
 import org.example.service_order_application.RMI.RMIServidor;
+import org.example.service_order_application.database.ConnectionJDBC;
 import org.example.service_order_proxy.rmi.RMIService;
 
 import java.io.BufferedReader;
@@ -20,17 +21,19 @@ import java.util.Map;
 
 public class ServerService {
 
-    private static final String server = "localhost";
+    private static final String server = ""; // Ip victor
     int port;
     int portRmi;
     String serviceOrderInstance;
     Map<String, String> proxies;
 
-    public ServerService(int port, int portRmi, String serviceOrderInstance, Map<String, String> proxies) {
+    public ServerService(int port, int portRmi, String serviceOrderInstance, Map<String, String> proxies) throws SQLException {
         this.port = port;
         this.portRmi = portRmi;
         this.serviceOrderInstance = serviceOrderInstance;
         this.proxies = proxies;
+
+        new ConnectionJDBC();
     }
 
     public void initializeServer() {

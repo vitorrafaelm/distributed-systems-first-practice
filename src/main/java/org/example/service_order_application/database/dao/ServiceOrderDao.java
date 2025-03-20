@@ -12,11 +12,7 @@ public class ServiceOrderDao implements BaseDao<ServiceOrder>{
     Connection connection;
 
     public ServiceOrderDao() {
-        try {
-            this.connection = new ConnectionJDBC().getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        this.connection = ConnectionJDBC.getConnection();
     }
 
     public ServiceOrder insert (ServiceOrder service_order) {
@@ -70,6 +66,22 @@ public class ServiceOrderDao implements BaseDao<ServiceOrder>{
             e.printStackTrace();
             return false;
         }
+    }
+
+    public boolean search(ServiceOrder service_order) {
+        String sql = "SELECT * FROM service_orders WHERE id=?;";
+        try {
+            PreparedStatement pst = this.connection.prepareStatement(sql);
+            pst.setInt(1, service_order.getId());
+            pst.execute();
+
+            return true;
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     public boolean update(ServiceOrder service_order) {
