@@ -23,8 +23,6 @@ public class ServiceOrderClient {
         scanner = new Scanner(System.in);
         this.connectToLocationServer();
         this.insertInitialServiceOrders();
-        this.insertInitialServiceOrders2();
-        this.insertInitialServiceOrders3();
     }
 
     private void connectToLocationServer() {
@@ -64,7 +62,7 @@ public class ServiceOrderClient {
     private void insertInitialServiceOrders() {
 
         System.out.println("Inserindo 100 ordens de serviços iniciais...");
-        for (int i = 1; i <= 40; i++) {
+        for (int i = 1; i <= 100; i++) {
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("operation", "add");
             jsonObject.addProperty("code", "OS" + i);
@@ -77,45 +75,6 @@ public class ServiceOrderClient {
 
             System.out.println("Inserindo OS " + i + ": " + result);
         }
-
-    }
-
-    private void insertInitialServiceOrders2() {
-
-        System.out.println("Inserindo 100 ordens de serviços iniciais...");
-        for (int i = 1; i <= 40; i++) {
-            JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("operation", "add");
-            jsonObject.addProperty("code", "OS" + i);
-            jsonObject.addProperty("name", "Ordem de service" + i);
-            jsonObject.addProperty("description", "Descrição da OS" + i);
-            jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
-
-            String operation = jsonObject.toString();
-            String result = sendRequest(operation);
-
-            System.out.println("Inserindo OS " + i + ": " + result);
-        }
-
-    }
-
-    private void insertInitialServiceOrders3() {
-
-        System.out.println("Inserindo 100 ordens de serviços iniciais...");
-        for (int i = 1; i <= 10; i++) {
-            JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("operation", "add");
-            jsonObject.addProperty("code", "OS" + i);
-            jsonObject.addProperty("name", "Ordem de service" + i);
-            jsonObject.addProperty("description", "Descrição da OS" + i);
-            jsonObject.addProperty("Authorization", PROXY_AUTH_TOKEN);
-
-            String operation = jsonObject.toString();
-            String result = sendRequest(operation);
-
-            System.out.println("Inserindo OS " + i + ": " + result);
-        }
-        System.out.println("Inserção de 100 ordens de serviço concluída.");
 
     }
 
